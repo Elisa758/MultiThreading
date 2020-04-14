@@ -33,7 +33,7 @@ namespace Multi_Threading
 
             }
 
-            Console.WriteLine("The Winner is Horse n° {0} : The Magnificient {1}", FirstHorseNb, FirstHorseName);
+            Console.WriteLine("The Winner is Horse n° {0} : The Magnificient {1} !!!", FirstHorseNb, FirstHorseName);
 
 
         }
@@ -56,7 +56,6 @@ namespace Multi_Threading
             Console.WriteLine("Horse n° {0} : {1} cross the finish line !!!", Thread.CurrentThread.ManagedThreadId, Thread.CurrentThread.Name);
 
             Mutex.ReleaseMutex();
-            Console.WriteLine("Result : {0} time = {1}", Thread.CurrentThread.Name, executionTime);
 
 
         }
